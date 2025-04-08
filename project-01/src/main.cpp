@@ -1,14 +1,14 @@
 #include <Arduino.h>
 
+// Blinks the LED on pin 13 every second
+
 void setup() {
-  Serial.begin(9600);
-  pinMode(LED_BUILTIN, OUTPUT);
+  pinMode(13, OUTPUT);
 }
 
 void loop() {
-  digitalWrite(LED_BUILTIN, HIGH);
+  digitalWrite(13, HIGH);
   delay(1000);
-  digitalWrite(LED_BUILTIN, LOW);
+  digitalWrite(13, LOW);
   delay(1000);
-  Serial.println("Blink!");
 }
